@@ -1,13 +1,8 @@
-import { Stack } from "expo-router";
+import { Stack } from 'expo-router'
 
-
-export default function RootLayout() {
-  return (
-    <Stack screenOptions={{headerShown:false}}>
-      <Stack.Screen name="start-game" />
-      <Stack.Screen name="(tabs)"/>
-      <Stack.Screen name="modal" options={{presentation:"modal"}} />
-    </Stack>
-  )
+export default function RootLayout(){
+  return <Stack screenOptions={{headerShown:false}}>
+    <Stack.Screen name='(tabs)' />
+    <Stack.Screen name='modal' options={{presentation:"modal"}}/>
+  </Stack>
 }
-

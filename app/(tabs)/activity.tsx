@@ -7,7 +7,7 @@ return(
         justifyContent:'center',
         alignItems:'center'
     }}>
-        <Text>edit app/add</Text>
+        <Text>edit app/activity</Text>
     </View>
 )
 }
