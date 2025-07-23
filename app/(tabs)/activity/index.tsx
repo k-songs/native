@@ -1,7 +1,7 @@
 import NotFound from '@/app/+not-found'
 import { usePathname, useRouter } from 'expo-router'
 import { Text, TouchableOpacity, View } from 'react-native'
-
+/* 스레드 replace를 많이씀 */
 export default function Index(){
     const router = useRouter()
     const pathname = usePathname()
@@ -25,31 +25,31 @@ return(
         alignItems:'center' }}>
 
            <View>
-            <TouchableOpacity onPress={()=>router.push(`/activity`)}>
-                <Text>All</Text></TouchableOpacity>
+            <TouchableOpacity onPress={()=>router.replace(`/activity`)}>
+                <Text style={{color :pathname === "/activity" ? "red":"black"}}>All</Text></TouchableOpacity>
             </View>
             <View>
-            <TouchableOpacity onPress={()=>router.push(`/activity/follows`)}>
-                <Text>Follows</Text></TouchableOpacity>
+            <TouchableOpacity onPress={()=>router.replace(`/activity/follows`)}>
+                <Text style={{color :pathname === "/activity/follows" ? "red":"black"}}>Follows</Text></TouchableOpacity>
             </View>
             <View>
-            <TouchableOpacity onPress={()=>router.push(`/activity/replies`)}>
-                <Text>Replies</Text></TouchableOpacity>
+            <TouchableOpacity onPress={()=>router.replace(`/activity/replies`)}>
+                <Text style={{color :pathname === "/activity/replies" ? "red":"black"}}>Replies</Text></TouchableOpacity>
             </View>
             <View>
-            <TouchableOpacity onPress={()=>router.push(`/activity/mentions`)}>
+            <TouchableOpacity onPress={()=>router.replace(`/activity/mentions`)}>
                 <Text>Mentions</Text></TouchableOpacity>
             </View>
             <View>
-            <TouchableOpacity onPress={()=>router.push(`/activity/quotes`)}>
+            <TouchableOpacity onPress={()=>router.replace(`/activity/quotes`)}>
                 <Text>Quotes</Text></TouchableOpacity>
             </View>
             <View>
-            <TouchableOpacity onPress={()=>router.push(`/activity/reposts`)}>
+            <TouchableOpacity onPress={()=>router.replace(`/activity/reposts`)}>
                 <Text>Reposts</Text></TouchableOpacity>
             </View>
             <View>
-            <TouchableOpacity onPress={()=>router.push(`/activity/verified`)}>
+            <TouchableOpacity onPress={()=>router.replace(`/activity/verified`)}>
                 <Text>Verified</Text></TouchableOpacity>
             </View>
 

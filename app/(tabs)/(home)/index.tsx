@@ -13,11 +13,11 @@ return(
         alignItems:'center'
     }}>
             <View>
-            <TouchableOpacity onPress={()=>router.push(`/`)}>
-                <Text style={{color:pathname==="/"?'red':"black"}}>For u</Text></TouchableOpacity>
+            <TouchableOpacity onPress={()=>router.navigate(`/`)}>
+                <Text style={{color:pathname==="/"?'red':"black"}}>For you</Text></TouchableOpacity>
             </View>
             <View>
-            <TouchableOpacity onPress={()=>router.push(`/following`)}>
+            <TouchableOpacity onPress={()=>router.navigate(`/following`)}>
                 <Text style={{color:pathname==="/"?'black':"red"}}>Following</Text></TouchableOpacity>
             </View>
             <View>
@@ -32,7 +32,6 @@ return(
             <TouchableOpacity onPress={()=>router.push(`/@zero/post/3`)}>
                 <Text>게시글3</Text></TouchableOpacity>
             </View>
-
     </View>
 )
 }

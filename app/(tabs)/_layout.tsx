@@ -16,6 +16,7 @@ export default function TabLayout() {
   return (
     <Fragment>
       <Tabs
+      backBehavior="history"
         screenOptions={{
           headerShown: false,
         }}
